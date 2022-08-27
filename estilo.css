@@ -1,0 +1,377 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+
+.navUl {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: #a3a08e;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 80px;
+    text-align: center; 
+
+}
+
+.navUl li {
+    display: inline-block;
+}
+
+.navUl li a {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    color: #000000;
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 620px) {
+    .navUl {
+        display: inline-block;
+        height: auto;
+    }
+}
+
+
+
+
+.navIndex:hover {
+    background-color: #e7d682;
+
+}
+
+
+.navLugares:hover {
+    background-color: #e7d682;
+}
+
+
+
+.navPersonajes:hover {
+    background-color: #e7d682;
+}
+
+
+
+.navHistoria:hover {
+    background-color: #e7d682;
+}
+
+
+.navContacto:hover {
+    background-color: #e7d682;
+    text-align: center;
+}
+
+.main {
+    background-image: url(./imagenes/fondoindex.png);
+    background-attachment: fixed;
+    color: black;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.mainIndex {
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.mainIndex__h1 {
+    font-size: 55px;
+    padding-top: 50px;
+
+}
+
+.mainIndex__img {
+    width: 60%;
+    padding-left: 20%;
+    margin: 10%;
+}
+
+.mainIndex__p {
+    font-size: 20px;
+    padding-bottom: 30px;
+    padding-left: 10%;
+    padding-right: 10%;
+    line-height: 30px;
+}
+
+@media screen and (max-width: 750px) {
+    .mainIndex__img {}
+}
+
+.mainLugares__div {
+    display: grid;
+    grid-template-columns: 49% 49%;
+
+    gap: 2%;
+}
+
+.mainLugares__div div h2 {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 750px) {
+    .mainLugares__div {
+        display: grid;
+        grid-template-columns: 70%;
+
+        gap: 2%;
+        justify-content: center;
+        padding-bottom: 500px;
+    }
+
+    .mainLugares__div div h2 {}
+}
+
+
+.mainLugares__div div {
+    display: flex;
+    flex-direction: column;
+
+
+    margin: 50px;
+    border: 5px Solid black;
+    border-radius: 110px;
+    background-color: #a3a08e;
+}
+
+.mainLugares__div div:hover {
+    background-color: #bdbdbd9c;
+    border: 5px Solid #a3a08e;
+}
+
+.mainLugares__div h2 {
+    font-size: 55px;
+    padding: 20%;
+}
+
+.mainLugares__div img {
+    width: 80%;
+    height: 200px;
+
+    padding-left: 18%;
+}
+
+.mainLugares__div p {
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-top: 20%;
+}
+
+.mainLugares__p4 {
+    padding-bottom: 40px;
+}
+
+.mainPersonajes__div {
+    display: grid;
+    grid-template-columns: 49% 49%;
+    gap: 2%;
+
+}
+
+.mainPersonajes__p {
+    padding-bottom: 40px;
+}
+
+
+@media screen and (max-width: 750px) {
+    .mainPersonajes__div {
+        display: grid;
+        grid-template-columns: 70%;
+
+        gap: 2%;
+        justify-content: center;
+        padding-bottom: 500px;
+    }
+
+    .main {
+
+        background-color: #e7d682;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .mainPersonajes__div {
+        display: grid;
+        grid-template-columns: 70%;
+
+        gap: 2%;
+        justify-content: center;
+        padding-bottom: 900px;
+    }
+
+}
+
+
+
+
+.mainPersonajes__div div {
+    display: flex;
+    flex-direction: column;
+
+
+    margin: 50px;
+    border: 5px Solid black;
+    border-radius: 110px;
+    background-color: #a3a08e;
+}
+
+.mainPersonajes__div div:hover {
+    background-color: #bdbdbd9c;
+    border: 5px Solid #a3a08e;
+}
+
+.mainPersonajes__div h2 {
+    padding: 50px;
+
+
+}
+
+.mainPersonajes__div img {
+    width: 70%;
+    margin-left: 14%;
+}
+
+
+
+.mainPersonajes__div p {
+    padding-left: 5%;
+    padding-right: 5%;
+    margin: 30px;
+}
+
+.mainPersonajes__img {
+    border: #e7d682 5px solid;
+}
+
+
+.separadorPersonajes {
+    padding: 150px;
+    background-image: url(./imagenes/paisajepersonajes.jpg);
+    background-attachment: inherit;
+    color: black;
+    text-align: center;
+
+}
+
+.separadorPersonajes__p {
+
+    text-align: center 300px;
+    font-size: 100px;
+
+}
+
+
+.mainHistoria__div {
+    margin-left: 90px;
+    margin-right: 90px;
+}
+
+.mainHistoria__h1 {
+    font-size: 80px;
+    padding: 50px;
+
+}
+
+.mainHistoria__p {
+    font-size: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    line-height: 30px;
+    border: 15px Solid #e7d682;
+    border-radius: 20px;
+
+    background-color: #a3a08e;
+
+}
+
+
+
+.mainHistoria__div2 {
+    padding-top: 50px;
+
+}
+
+
+@media screen and (max-width: 700px) {
+    .mainHistoria__h1 {
+        visibility: hidden;
+    }
+
+}
+
+.mainContacto__div {
+    padding: 100px;
+    border: 5px Solid black;
+    margin-left: 190px;
+    margin-right: 190px;
+    color: #000000;
+
+}
+
+.mainContacto__div div {
+    display: grid;
+    grid-template-columns: 1fr;
+
+
+}
+
+.mainContacto__div div textarea {
+    height: 110%;
+    padding-bottom: 20%;
+}
+
+
+@media screen and (max-width: 760px) {
+    .mainContacto__div {
+        display: grid;
+        grid-template-columns: 70%%;
+        justify-content: center;
+        margin: 30%;
+    }
+}
+
+
+
+.mainContacto__div2 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+
+
+
+
+
+.footer {
+    background-image: url(./imagenes/footer.jpg);
+    background-position: center;
+    border-top: #a3a08e solid 8px;
+
+
+    padding: 10%;
+    background-color: #a3a08e;
+    height: 150px;
+    color: black;
+
+
+}

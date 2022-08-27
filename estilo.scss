@@ -1,0 +1,373 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+
+.navUl {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: #a3a08e;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 80px;
+
+    li {
+        display: inline-block;
+
+        a {
+            display: flex;
+            flex-direction: column;
+            padding: 2rem;
+            margin-bottom: 50px;
+            border-radius: 5px;
+
+
+        }
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 620px) {
+    .navUl {
+        display: inline-block;
+        height: auto;
+    }
+}
+
+.navUl li {
+    background-color: #a3a08e;
+
+    &:hover {
+        background-color: #e7d682;
+    }
+}
+
+
+.navIndex:hover {
+    transform: translate(170px);
+}
+
+
+.navLugares:hover {
+    transform: rotate(10deg);
+}
+
+
+
+
+
+.navPersonajes:hover {
+    transform: translate(150px);
+}
+
+
+
+.navHistoria:hover {
+    transform: rotate(-10deg);
+}
+
+
+.navContacto:hover {
+    transform: rotate(10deg);
+}
+
+.main {
+    background-color: #e7d682;
+    color: black;
+    text-align: center;
+}
+
+.mainIndex {
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.mainIndex__h1 {
+    font-size: 55px;
+    padding-top: 50px;
+
+}
+
+.mainIndex__img {
+    width: 60%;
+    padding-left: 20%;
+    margin: 10%;
+}
+
+.mainIndex__p {
+    font-size: 20px;
+    padding-bottom: 30px;
+    padding-left: 10%;
+    padding-right: 10%;
+    line-height: 30px;
+}
+
+@media screen and (max-width: 750px) {
+    .mainIndex__img {}
+}
+
+.mainLugares__div {
+    display: grid;
+    grid-template-columns: 49% 49%;
+
+    gap: 2%;
+
+    div {
+        display: flex;
+        flex-direction: column;
+
+
+        margin: 50px;
+        border: 5px Solid black;
+        border-radius: 110px;
+        background-color: #a3a08e;
+
+        h2 {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 750px) {
+    .mainLugares__div {
+        display: grid;
+        grid-template-columns: 70%;
+
+        gap: 2%;
+        justify-content: center;
+        padding-bottom: 500px;
+    }
+}
+   
+
+
+.mainLugares__div .mainLugares__div div:hover {
+    background-color: #bdbdbd9c;
+    border: 5px Solid #a3a08e;
+}
+
+.mainLugares__div h2 {
+    font-size: 55px;
+    padding: 20%;
+}
+
+.mainLugares__div img {
+    width: 80%;
+    height: 200px;
+
+    padding-left: 18%;
+}
+
+.mainLugares__div p {
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-top: 20%;
+}
+
+.mainLugares__p4 {
+    padding-bottom: 40px;
+}
+
+.mainPersonajes__div {
+    display: grid;
+    grid-template-columns: 49% 49%;
+    gap: 2%;
+
+}
+
+@media screen and (max-width: 750px) {
+    .mainPersonajes__div {
+        display: grid;
+        grid-template-columns: 70%;
+
+        gap: 2%;
+        justify-content: center;
+        padding-bottom: 500px;
+    }
+
+    .main {
+
+        background-color: #e7d682;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .mainPersonajes__div {
+        display: grid;
+        grid-template-columns: 70%;
+
+        gap: 2%;
+        justify-content: center;
+        padding-bottom: 900px;
+    }
+
+}
+
+
+
+
+.mainPersonajes__div div {
+    display: flex;
+    flex-direction: column;
+
+
+    margin: 50px;
+    border: 5px Solid black;
+    border-radius: 110px;
+    background-color: #a3a08e;
+}
+
+.mainPersonajes__div div:hover {
+    background-color: #bdbdbd9c;
+    border: 5px Solid #a3a08e;
+}
+
+.mainPersonajes__div h2 {
+    padding: 50px;
+
+
+}
+
+.mainPersonajes__div img {
+    width: 70%;
+    margin-left: 14%;
+}
+
+
+
+.mainPersonajes__div p {
+    padding-left: 5%;
+    padding-right: 5%;
+    margin: 30px;
+}
+
+
+.separadorPersonajes {
+    padding: 50px;
+    background-color: #e7d682;
+}
+
+
+.mainHistoria__div {
+    margin-left: 90px;
+    margin-right: 90px;
+}
+
+.mainHistoria__h1 {
+    font-size: 50px;
+    padding: 50px;
+    animation-name: efecto;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 3s;
+    animation-delay: 3s;
+}
+
+
+@keyframes efecto {
+    0% {}
+
+    25% {
+        width: 100px;
+    }
+
+    50% {
+        width: 400px;
+    }
+
+    75% {
+        width: 700px;
+    }
+
+    100% {
+        width: 1100px;
+    }
+}
+
+.mainHistoria__p {
+    font-size: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    line-height: 30px;
+    border: 5px Solid black;
+    border-radius: 50px;
+
+}
+
+
+
+.mainHistoria__div2 {
+    padding-top: 50px;
+
+}
+
+
+@media screen and (max-width: 400px) {
+    .mainHistoria__div h1 {
+        text-overflow: ;
+
+    }
+
+}
+
+.mainContacto__div {
+    padding: 100px;
+    border: 5px Solid black;
+    margin-left: 190px;
+    margin-right: 190px;
+    background-image: url(../JuanMuyala-Libro/imagenes/luna.png);
+    color: #a3a08e;
+
+}
+
+.mainContacto__div div {
+    display: grid;
+    grid-template-columns: 1fr;
+
+
+}
+
+.mainContacto__div div textarea {
+    height: 110%;
+    padding-bottom: 20%;
+}
+
+
+
+
+
+
+.mainContacto__div2 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+
+
+
+
+.footer {
+    background-color: #a3a08e;
+
+}
